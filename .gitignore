@@ -1,0 +1,17 @@
+# Build output
+**/bin/
+**/obj/
+
+# Visual Studio / VS Code
+.vs/
+.vscode/
+*.user
+*.suo
+
+# Runtime and local configuration
+**/appsettings.Development.json
+**/.env
+*.log
+
+# Temporary files
+spec.txt

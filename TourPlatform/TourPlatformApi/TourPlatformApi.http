@@ -1,0 +1,23 @@
+@TURB2BExtra_HostAddress = http://localhost:5094
+
+### Agency guide login
+POST {{TURB2BExtra_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{
+  "login": "guide@demo.local",
+  "password": "Guide123!"
+}
+
+### Intermediary owner login
+POST {{TURB2BExtra_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{
+  "login": "owner@demo.local",
+  "password": "Owner123!"
+}
+
+### Search hotels
+GET {{TURB2BExtra_HostAddress}}/api/hotels
+Authorization: Bearer {{accessToken}}

@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7fb">
+  <title>TURB2BExtra — панель управления</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-900 antialiased">
+  <main id="public-screen" class="public-screen">
+    <header class="public-nav">
+      <a class="brand brand-dark" href="/">
+        <span class="brand-mark">T2</span>
+        <span>TURB2BExtra</span>
+      </a>
+      <nav class="public-links" aria-label="Навигация по продукту">
+        <a href="#features">Возможности</a>
+        <a href="#tariffs">Тарифы</a>
+        <a href="#how-it-works">Как работает</a>
+      </nav>
+      <button class="button button-primary" type="button" data-open-login>Войти в кабинет <span>→</span></button>
+    </header>
+
+    <section class="public-hero">
+      <div class="public-hero-copy">
+        <span class="eyebrow">B2B-ПЛАТФОРМА ДЛЯ ТУРИЗМА</span>
+        <h1>Агентства и посредники.<br><span>Одна прозрачная система.</span></h1>
+        <p>TURB2BExtra объединяет бронирования, продажи, остатки, команду и отчеты в двух защищенных рабочих контурах.</p>
+        <div class="public-actions">
+          <button class="button button-primary" type="button" data-open-login>Начать работу <span>→</span></button>
+          <a class="button button-secondary" href="#features">Узнать возможности</a>
+        </div>
+        <div class="public-proof">
+          <div><strong>2</strong><span>отдельных контура</span></div>
+          <div><strong>4</strong><span>валюты</span></div>
+          <div><strong>8+</strong><span>ролей команды</span></div>
+        </div>
+      </div>
+      <div class="public-product-card" aria-label="Предпросмотр рабочего кабинета">
+        <div class="product-card-head">
+          <div class="product-brand"><span class="brand-mark">T2</span><strong>TURB2BExtra</strong></div>
+          <span class="product-live"><i></i> Live</span>
+        </div>
+        <div class="product-card-body">
+          <aside>
+            <span class="active">⌂ Обзор</span>
+            <span>▤ Билеты</span>
+            <span>◷ Рейсы</span>
+            <span>♙ Сотрудники</span>
+            <span>▦ Склад</span>
+          </aside>
+          <div class="product-dashboard">
+            <div class="product-dashboard-title"><div><small>Дашборд владельца</small><strong>Доброе утро.</strong></div><span>＋ Новый билет</span></div>
+            <div class="product-metrics">
+              <div><small>Продажи</small><strong>48</strong><span>+12% за месяц</span></div>
+              <div><small>Туристы</small><strong>132</strong><span>Активные заявки</span></div>
+              <div><small>Выручка</small><strong>$12.8k</strong><span>По 4 валютам</span></div>
+            </div>
+            <div class="product-chart">
+              <div class="chart-head"><strong>Динамика продаж</strong><small>30 дней</small></div>
+              <div class="chart-bars" aria-hidden="true">
+                <i style="height:34%"></i><i style="height:48%"></i><i style="height:42%"></i><i style="height:62%"></i><i style="height:57%"></i><i style="height:78%"></i><i style="height:69%"></i><i style="height:91%"></i><i style="height:73%"></i><i style="height:86%"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="public-section">
+      <div class="public-section-heading">
+        <span class="eyebrow">ВСЁ ДЛЯ ОПЕРАЦИЙ</span>
+        <h2>Полный контроль на каждом этапе</h2>
+        <p>От поиска партнера до нередактируемого PDF-документа.</p>
+      </div>
+      <div class="feature-grid">
+        <article><span class="feature-icon">◇</span><h3>Hex-связки</h3><p>Приватное подключение посредников без общего каталога и случайного поиска.</p></article>
+        <article><span class="feature-icon">▤</span><h3>Билеты и остатки</h3><p>Продажа в одной валюте и точный остаток в валюте прайса посредника.</p></article>
+        <article><span class="feature-icon">♙</span><h3>Команда по ролям</h3><p>Гиды, менеджеры, диспетчеры, бухгалтеры, водители и владельцы работают только в своей зоне.</p></article>
+        <article><span class="feature-icon">◷</span><h3>Рейсы и экипаж</h3><p>Несколько водителей и гидов, сборки себестоимости и расписание today/tomorrow.</p></article>
+        <article><span class="feature-icon">▦</span><h3>Склад и касса</h3><p>Позиции, остатки, оплата и продажа в USD, EUR, GBP и TRY.</p></article>
+        <article><span class="feature-icon">◎</span><h3>Уведомления и PDF</h3><p>Типы событий, WhatsApp/Email по тарифу и документы с пятиязычным футером.</p></article>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="public-section public-steps">
+      <div class="public-section-heading">
+        <span class="eyebrow">ПРОСТОЙ ПРОЦЕСС</span>
+        <h2>Подключение занимает несколько шагов</h2>
+      </div>
+      <div class="steps-grid">
+        <article><b>01</b><h3>Подключите партнера</h3><p>Введите Hex-код и создайте приватную запись PartnerConnection.</p></article>
+        <article><b>02</b><h3>Оформите продажу</h3><p>Выберите рейс, отель или точку сбора и сохраните три ключевые суммы билета.</p></article>
+        <article><b>03</b><h3>Контролируйте отчетность</h3><p>Дашборд показывает продажи, остатки, долги, выручку и лидеров команды.</p></article>
+      </div>
+    </section>
+
+    <section id="tariffs" class="public-section public-pricing">
+      <div class="public-section-heading">
+        <span class="eyebrow">ПОДПИСКА ПО РОЛЯМ БИЗНЕСА</span>
+        <h2>Выберите подходящий тариф</h2>
+        <p>Активный сезон — 100%. Межсезонье — 50% стоимости тарифа.</p>
+      </div>
+      <div class="pricing-grid">
+        <article><span>Базовый</span><h3>Для малого бизнеса</h3><div class="plan-price">Базовый <small>тариф</small></div><p>Билеты, базовые отчеты и Email. WhatsApp не отправляется.</p><button class="button button-secondary" type="button" data-open-login>Выбрать</button></article>
+        <article><span>Medium</span><h3>Для растущей команды</h3><div class="plan-price">Medium <small>тариф</small></div><p>Бронь в WhatsApp одному контакту или одной группе.</p><button class="button button-secondary" type="button" data-open-login>Выбрать</button></article>
+        <article class="plan-featured"><span>Lux</span><h3>Полный операционный контур</h3><div class="plan-price">Lux <small>тариф</small></div><p>WhatsApp клиенту и посреднику, плюс уведомления при изменениях.</p><button class="button button-primary" type="button" data-open-login>Выбрать</button></article>
+        <article><span>Безлимит</span><h3>Для сетей и холдингов</h3><div class="plan-price">Unlimited <small>тариф</small></div><p>Максимальные лимиты и полный набор уведомлений и отчетности.</p><button class="button button-secondary" type="button" data-open-login>Выбрать</button></article>
+      </div>
+    </section>
+
+    <footer class="public-footer">
+      <a class="brand brand-light" href="/"><span class="brand-mark">T2</span><span>TURB2BExtra</span></a>
+      <p>Платформа для туристических агентств и принимающих компаний.</p>
+      <button class="text-button" type="button" data-open-login>Войти в рабочий кабинет →</button>
+    </footer>
+  </main>
+
+  <main id="login-screen" class="login-shell min-h-screen hidden">
+    <section class="login-intro">
+      <a class="brand brand-light" href="/" aria-label="TURB2BExtra">
+        <span class="brand-mark">T2</span>
+        <span>TURB2BExtra</span>
+      </a>
+      <div class="intro-copy">
+        <span class="eyebrow eyebrow-light">ТУРИЗМ БЕЗ ХАОСА</span>
+        <h1>Все поездки<br>в одном месте.</h1>
+        <p>Билеты, рейсы и команда — в едином рабочем пространстве вашего туристического бизнеса.</p>
+        <div class="intro-points">
+          <div><span class="point-check">✓</span> Два независимых контура работы</div>
+          <div><span class="point-check">✓</span> Понятное расписание и заявки</div>
+          <div><span class="point-check">✓</span> Ваши данные защищены</div>
+        </div>
+      </div>
+      <div class="intro-footer">Платформа для тех, кто организует впечатления.</div>
+    </section>
+
+    <section class="login-panel">
+      <div class="login-card">
+        <div class="brand brand-dark">
+          <span class="brand-mark">T2</span>
+          <span>TURB2BExtra</span>
+        </div>
+        <div class="login-heading">
+          <span class="eyebrow">РАБОЧЕЕ ПРОСТРАНСТВО</span>
+          <h2>С возвращением</h2>
+          <p>Войдите, чтобы продолжить работу</p>
+        </div>
+        <div id="login-error" class="alert alert-error hidden" role="alert"></div>
+        <form id="login-form" class="form-stack">
+          <label class="field-label" for="login-input">Логин</label>
+          <input class="text-input" id="login-input" name="login" type="email" placeholder="name@company.com" autocomplete="username" required>
+          <label class="field-label" for="password-input">Пароль</label>
+          <div class="password-wrap">
+            <input class="text-input" id="password-input" name="password" type="password" placeholder="Введите пароль" autocomplete="current-password" required>
+            <button type="button" class="password-toggle" id="toggle-password" aria-label="Показать пароль">Показать</button>
+          </div>
+          <button class="button button-primary button-wide login-submit" type="submit">
+            <span>Войти в систему</span><span aria-hidden="true">→</span>
+          </button>
+        </form>
+        <div class="demo-box">
+          <div class="demo-title"><span class="demo-spark">✦</span> Демо-доступ</div>
+            <div class="demo-row"><span>Агентство · владелец</span><button type="button" data-demo-login="agency.owner@demo.local" data-demo-password="AgencyOwner123!">Заполнить</button></div>
+            <div class="demo-row"><span>Агентство · гид</span><button type="button" data-demo-login="guide@demo.local" data-demo-password="Guide123!">Заполнить</button></div>
+            <div class="demo-row"><span>Посредник 1 · владелец</span><button type="button" data-demo-login="owner@demo.local" data-demo-password="Owner123!">Заполнить</button></div>
+            <div class="demo-row"><span>Посредник 2 · владелец</span><button type="button" data-demo-login="owner.alanya@demo.local" data-demo-password="AlanyaOwner123!">Заполнить</button></div>
+            <div class="demo-row"><span>Посредник 1 · водитель</span><button type="button" data-demo-login="driver@demo.local" data-demo-password="Driver123!">Заполнить</button></div>
+        </div>
+        <p class="login-legal">Входя в систему, вы соглашаетесь с правилами использования платформы.</p>
+      </div>
+    </section>
+  </main>
+
+  <div id="app-screen" class="app-shell hidden">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand brand-dark sidebar-brand" href="/">
+        <span class="brand-mark">T2</span>
+        <span>TURB2BExtra</span>
+      </a>
+      <div class="workspace-label">РАБОЧЕЕ ПРОСТРАНСТВО</div>
+      <div id="account-badge" class="account-badge"></div>
+      <nav id="main-nav" class="main-nav" aria-label="Главная навигация"></nav>
+      <div class="sidebar-bottom">
+        <div class="help-card"><span class="help-icon">?</span><div><strong>Нужна помощь?</strong><small>Здесь всё устроено просто</small></div></div>
+        <button id="logout-button" class="logout-button"><span class="logout-icon">↪</span> Выйти из аккаунта</button>
+        <div class="sidebar-version">TURB2BExtra · BETA</div>
+      </div>
+    </aside>
+
+    <section class="main-area">
+      <header class="topbar">
+        <button id="menu-toggle" class="mobile-menu" aria-label="Открыть меню">☰</button>
+        <div class="breadcrumbs"><span>Рабочее пространство</span><span class="breadcrumb-slash">/</span><strong id="page-crumb">Обзор</strong></div>
+        <div class="topbar-right">
+          <span class="connection-status"><i></i> Система работает</span>
+          <div class="avatar" id="user-avatar">М</div>
+          <div class="top-user"><strong id="top-user-name">Пользователь</strong><small id="top-user-role">Роль</small></div>
+        </div>
+      </header>
+
+      <main class="content-area">
+        <div id="toast" class="toast hidden" role="status"></div>
+        <section id="agency-view" class="role-view hidden">
+          <section id="agency-overview" class="subpage">
+          <div class="page-heading">
+            <div><span class="eyebrow">АГЕНТСТВО</span><h1>Доброе утро<span class="heading-period">.</span></h1><p>Ваши билеты и поездки — под рукой.</p></div>
+            <button class="button button-primary" data-open-view="new-booking"><span>＋</span> Новый билет</button>
+          </div>
+          <div class="metric-grid">
+            <article class="metric-card"><div class="metric-head"><span>Мои билеты</span><span class="metric-icon purple">▤</span></div><strong id="booking-count">—</strong><small>Всего оформлено</small></article>
+            <article class="metric-card"><div class="metric-head"><span>Туристы</span><span class="metric-icon blue">♙</span></div><strong id="tourist-count">—</strong><small>По вашим заявкам</small></article>
+            <article class="metric-card"><div class="metric-head"><span>Моя комиссия</span><span class="metric-icon green">↗</span></div><strong id="commission-total">—</strong><small>По оформленным билетам</small></article>
+            <article class="metric-card"><div class="metric-head"><span>Ближайшие рейсы</span><span class="metric-icon orange">◷</span></div><strong id="available-count">—</strong><small>Можно забронировать</small></article>
+          </div>
+          <div class="section-title-row"><div><h2>Ближайшие выезды</h2><p>Выберите рейс, чтобы быстро оформить билет</p></div><button class="text-button" data-open-view="new-booking">Все рейсы <span>→</span></button></div>
+          <div id="agency-trip-cards" class="trip-card-grid"></div>
+          <div class="section-title-row booking-title"><div><h2>Последние билеты</h2><p>Заявки, оформленные из вашего аккаунта</p></div><button class="text-button" data-open-view="bookings">Смотреть все <span>→</span></button></div>
+          <div id="agency-recent-bookings" class="table-card"></div>
+          </section>
+
+          <section id="agency-new-booking" class="subpage hidden">
+            <div class="back-row"><button class="text-button" data-open-view="overview">← К обзору</button></div>
+            <div class="page-heading compact"><div><span class="eyebrow">АГЕНТСТВО · ПРОДАЖИ</span><h1>Новый билет<span class="heading-period">.</span></h1><p>Заполните детали поездки и данные группы.</p></div></div>
+            <div class="form-card">
+              <form id="booking-form">
+                <div class="form-section-title"><span class="step-number">01</span><div><h3>Поездка и место встречи</h3><p>Выберите рейс и точку посадки</p></div></div>
+                <div class="form-grid">
+                  <label class="form-field full"><span>Рейс <b>*</b></span><select id="booking-trip" class="text-input" required><option value="">Загрузка доступных рейсов...</option></select></label>
+                  <div class="form-field full"><span>Место встречи</span><div class="segmented-control"><button type="button" class="segment active" data-pickup="hotel">Отель</button><button type="button" class="segment" data-pickup="custom">Своя точка</button></div></div>
+                  <label class="form-field full" id="hotel-field"><span>Отель</span><select id="booking-hotel" class="text-input"><option value="">Без привязки к отелю</option></select><small class="field-hint">Можно оставить пустым и указать ориентир в комментарии.</small></label>
+                  <label class="form-field full hidden" id="custom-pickup-field"><span>Адрес или ориентир <b>*</b></span><input id="custom-pickup" class="text-input" type="text" placeholder="Например: фонтан у главного входа"></label>
+                </div>
+                <div class="form-divider"></div>
+                <div class="form-section-title"><span class="step-number">02</span><div><h3>Состав группы</h3><p>Укажите количество туристов и оплату</p></div></div>
+                <div class="form-grid">
+                  <label class="form-field"><span>Взрослые <b>*</b></span><input id="booking-adults" class="text-input" type="number" min="1" value="1" required></label>
+                  <label class="form-field"><span>Дети</span><input id="booking-children" class="text-input" type="number" min="0" value="0"></label>
+                  <label class="form-field"><span>Общая сумма продажи <b>*</b></span><input id="booking-total-sale" class="text-input" type="number" min="0" step="0.01" value="0" required></label>
+                  <label class="form-field"><span>Валюта продажи</span><select id="booking-sale-currency" class="text-input"><option>USD</option><option>EUR</option><option>GBP</option><option>TRY</option></select></label>
+                  <label class="form-field"><span>Принято от туриста</span><input id="booking-paid" class="text-input" type="number" min="0" step="0.01" value="0"></label>
+                  <label class="form-field"><span>Валюта приема</span><select id="booking-paid-currency" class="text-input"><option>USD</option><option>EUR</option><option>GBP</option><option>TRY</option></select></label>
+                  <label class="form-field full"><span>Остаток к оплате</span><output id="booking-rest-amount" class="text-input" style="display:flex;align-items:center">0.00</output></label>
+                  <label class="form-field full"><span>Комиссия гида</span><input id="booking-commission" class="text-input" type="number" min="0" step="0.01" value="0"><small class="field-hint">Для роли гида комиссия по правилам доступа рассчитывается менеджером.</small></label>
+                </div>
+                <div class="form-actions"><span class="field-hint">Билет будет виден только в вашем аккаунте агентства.</span><button class="button button-primary" type="submit">Оформить билет <span>→</span></button></div>
+              </form>
+            </div>
+          </section>
+
+          <section id="agency-bookings" class="subpage hidden">
+            <div class="back-row"><button class="text-button" data-open-view="overview">← К обзору</button></div>
+            <div class="page-heading compact"><div><span class="eyebrow">АГЕНТСТВО · ПРОДАЖИ</span><h1>Мои билеты<span class="heading-period">.</span></h1><p>Здесь только ваши заявки.</p></div><button class="button button-primary" data-open-view="new-booking">＋ Новый билет</button></div>
+            <div id="agency-all-bookings" class="table-card"></div>
+          </section>
+        </section>
+
+        <section id="intermediary-view" class="role-view hidden">
+          <div id="intermediary-owner-view" class="subpage">
+            <div class="page-heading">
+              <div><span class="eyebrow">ПОСРЕДНИК</span><h1>Панель рейсов<span class="heading-period">.</span></h1><p>Расписание, загрузка и выручка по вашим выездам.</p></div>
+              <button class="button button-primary" data-open-view="new-trip">＋ Создать рейс</button>
+            </div>
+            <div class="metric-grid">
+              <article class="metric-card"><div class="metric-head"><span>Всего рейсов</span><span class="metric-icon purple">◷</span></div><strong id="inter-trip-count">—</strong><small>В расписании</small></article>
+              <article class="metric-card"><div class="metric-head"><span>Туристы</span><span class="metric-icon blue">♙</span></div><strong id="inter-tourist-count">—</strong><small>Забронировано на рейсы</small></article>
+              <article class="metric-card"><div class="metric-head"><span>Места</span><span class="metric-icon orange">▦</span></div><strong id="inter-capacity">—</strong><small>Свободно в расписании</small></article>
+              <article class="metric-card"><div class="metric-head"><span>Выручка</span><span class="metric-icon green">↗</span></div><strong id="inter-revenue">—</strong><small>По кассовым суммам</small></article>
+            </div>
+            <div class="section-title-row"><div><h2>Расписание рейсов</h2><p>Выезды, созданные вашим аккаунтом</p></div><button class="text-button" data-open-view="tours">Управление экскурсиями <span>→</span></button></div>
+            <div id="intermediary-trips" class="table-card"></div>
+            <section id="trip-cost-panel" class="cost-panel hidden">
+              <div class="section-title-row"><div><span class="eyebrow">СЕБЕСТОИМОСТЬ</span><h2 id="cost-trip-title">Расходы рейса</h2><p>Добавьте постоянные и переменные расходы</p></div><button type="button" class="icon-button" id="close-cost-panel" aria-label="Закрыть">×</button></div>
+              <div id="cost-summary" class="cost-summary"></div>
+              <form id="expense-form" class="expense-form">
+                <input id="expense-trip-id" type="hidden">
+                <label class="form-field"><span>Название расхода</span><input id="expense-title" class="text-input" placeholder="Например, топливо" required></label>
+                <label class="form-field"><span>Тип</span><select id="expense-type" class="text-input"><option value="PerTrip">На рейс</option><option value="PerPerson">На человека</option></select></label>
+                <label class="form-field"><span>Сумма</span><input id="expense-amount" class="text-input" type="number" min="0.01" step="0.01" required></label>
+                <label class="form-field"><span>Валюта</span><select id="expense-currency" class="text-input"><option>USD</option><option>EUR</option><option>GBP</option><option>TRY</option></select></label>
+                <label class="checkbox-field"><input id="expense-extra" type="checkbox"><span>Штраф или доп. расход</span></label>
+                <button class="button button-primary" type="submit">Добавить расход</button>
+              </form>
+            </section>
+          </div>
+
+          <section id="intermediary-tours" class="subpage hidden">
+            <div class="back-row"><button class="text-button" data-open-view="overview">← К панели</button></div>
+            <div class="page-heading compact"><div><span class="eyebrow">ПОСРЕДНИК · КАТАЛОГ</span><h1>Экскурсии<span class="heading-period">.</span></h1><p>Создайте каталог услуг, чтобы добавлять рейсы.</p></div></div>
+            <div class="split-layout">
+              <div class="form-card compact-card"><form id="tour-form"><div class="form-section-title"><span class="step-number">＋</span><div><h3>Новая экскурсия</h3><p>Название и цена для агентств</p></div></div>
+                <label class="form-field"><span>Название экскурсии <b>*</b></span><input id="tour-title" class="text-input" required placeholder="Например, Старый город"></label>
+                <div class="form-grid"><label class="form-field"><span>Цена <b>*</b></span><input id="tour-price" class="text-input" type="number" min="0" step="0.01" value="0" required></label><label class="form-field"><span>Валюта</span><select id="tour-currency" class="text-input"><option>USD</option><option>EUR</option><option>GBP</option><option>TRY</option></select></label></div>
+                <button class="button button-primary button-wide" type="submit">Добавить экскурсию <span>→</span></button>
+              </form></div>
+              <div><div class="section-title-row simple"><div><h2>Ваш каталог</h2><p>Экскурсии этого посредника</p></div></div><div id="tour-list" class="tour-list"></div></div>
+            </div>
+          </section>
+
+          <section id="intermediary-new-trip" class="subpage hidden">
+            <div class="back-row"><button class="text-button" data-open-view="overview">← К панели</button></div>
+            <div class="page-heading compact"><div><span class="eyebrow">ПОСРЕДНИК · РАСПИСАНИЕ</span><h1>Создать рейс<span class="heading-period">.</span></h1><p>Добавьте дату выезда и назначьте водителя.</p></div></div>
+            <div class="form-card narrow-card"><form id="trip-form">
+              <div class="form-grid">
+                <label class="form-field full"><span>Экскурсия <b>*</b></span><select id="trip-tour" class="text-input" required><option value="">Сначала создайте экскурсию</option></select></label>
+                <label class="form-field"><span>Дата выезда <b>*</b></span><input id="trip-date" class="text-input" type="date" required></label>
+                <label class="form-field"><span>Время <b>*</b></span><input id="trip-time" class="text-input" type="time" required></label>
+                <label class="form-field"><span>Номер машины</span><input id="trip-vehicle" class="text-input" placeholder="Например, 34 ABC 123"></label>
+                <label class="form-field"><span>Вместимость <b>*</b></span><input id="trip-capacity-input" class="text-input" type="number" min="1" max="200" value="20" required></label>
+                <label class="form-field full"><span>Водитель</span><select id="trip-driver" class="text-input"><option value="">Пока не назначен</option></select><small class="field-hint">Список сотрудников вашего аккаунта.</small></label>
+              </div>
+              <div class="form-actions"><span class="field-hint">Рейс станет доступен агентствам для бронирования.</span><button class="button button-primary" type="submit">Создать рейс <span>→</span></button></div>
+            </form></div>
+          </section>
+        </section>
+
+        <section id="driver-view" class="role-view hidden">
+          <div class="page-heading"><div><span class="eyebrow">МОЁ РАСПИСАНИЕ</span><h1>Мои выезды<span class="heading-period">.</span></h1><p>Рейсы только на сегодня и завтра.</p></div><button class="button button-secondary" id="refresh-driver">↻ Обновить</button></div>
+          <div class="driver-note"><span>ⓘ</span><div><strong>Только необходимое для работы</strong><p>В этом списке нет цен, комиссии и себестоимости.</p></div></div>
+          <div id="driver-trips" class="driver-trip-list"></div>
+        </section>
+
+        <footer class="content-footer"><span>© 2026 TURB2BExtra</span><span>Создано для людей, которые создают впечатления <b>✳</b></span></footer>
+      </main>
+    </section>
+  </div>
+</body>
+</html>
